@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    tools:context="com.intersvyaz.dlnaexample.MainActivity"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <TextView
+        android:id="@+id/text_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Content URL" />
+
+    <EditText
+        android:id="@+id/edit_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_url"
+        android:layout_below="@+id/text_url"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="text|textCapSentences"
+        android:lines="1"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="https://raw.githubusercontent.com/mediaelement/mediaelement-files/master/big_buck_bunny.mp4"
+        android:textIsSelectable="true"
+        tools:textIsSelectable="true" />
+
+    <ListView
+        android:id="@+id/list_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_devices"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        android:text="Play" />
+
+    <TextView
+        android:id="@+id/text_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_url"
+        android:layout_marginTop="18dp"
+        android:text="Select device..." />
+
+
+</RelativeLayout>
+
